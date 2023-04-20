@@ -1,0 +1,58 @@
+@use '../utils/vars' ;
+
+.header {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 vars.$gutter *3;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.header__blockTop {
+    font-family: vars.$fontWork;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding-top: vars.$gutter *2;
+    
+}
+
+.header__title {
+    font-size: vars.$font * 5;
+    transform: translateX(70px);
+   
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+   margin-right: vars.$gutter * 2;
+    text-transform: uppercase;
+
+  
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__subtitle {
+    display: flex;
+    align-items: center;
+    font-family: vars.$fontSills;
+    line-height: 0.6;
+    
+    
+
+    &--big {
+    font-size: vars.$font * 38.5;
+    }
+
+    &--little {
+        font-size: vars.$font * 11;
+    }  
+    
+}
