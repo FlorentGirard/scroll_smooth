@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/main.scss""/>
+    <link rel="stylesheet" href="/styles/main.scss"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-<header class="header">
+<body data-scroll-container>
+<header class="header" data-scroll-section>
     <div class="header__blockTop">
         <div>Our work</div>
         <h1 class="header__title" >Hello </h1>
@@ -30,8 +30,8 @@
             <span class="header__subtitle--little"> &nbsp;we</span><span class="header__subtitle--big">Work</span></h2>
   
 </header>
-<main class="content">
-    <section class="content__info">
+<main class="content" data-scroll-section>
+    <div class="content__info">
         <div class="content__infoTop">
           <p>Our goal is to dive deep into the essence of your brand, to discover its story</p>
           <p>and convey it to your audience through the art of storytelling.</p>
@@ -46,7 +46,7 @@
                 <p>SCROLL DOWN TO LEARN MORE ABOUT</p>
                 <p>ALL OUR PROCESSES</p>
         </div>
-    </section>
+    </div>
     <div class="content__wrapper">
         <section>
             <div class="section__flex section__flex--step1">
@@ -92,8 +92,9 @@
         </section>
      
     </div>
-    <div class="content__wrapper"></div>
+  
 </main>
 </body>
+<script src="js/locomotive-scroll.min.js"></script>
 <script src="js/script.js"> </script>
 </html>

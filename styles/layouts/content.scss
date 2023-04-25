@@ -1,6 +1,7 @@
 @use '../utils/vars' ;
 
 .content {
+  position: relative;
     background-color: vars.$mainBackground;
     display: flex;
     flex-direction: column;
@@ -45,3 +46,6 @@ font-family: vars.$fontSills;
   padding-bottom: vars.$gutter * 8;
   color: vars.$colorMain;
 }
+
+
+
