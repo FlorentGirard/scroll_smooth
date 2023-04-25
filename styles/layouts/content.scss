@@ -1,0 +1,47 @@
+@use '../utils/vars' ;
+
+.content {
+    background-color: vars.$mainBackground;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+
+.content__info {
+    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.content__infoTop {
+  font-family: vars.$fontWork;
+  font-size: vars.$font *1.4;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: vars.$gutter *3;
+  color: vars.$colorMain;
+}
+
+.content__middle {
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: vars.$font * 6;
+text-align: center;
+font-family: vars.$fontSills;
+
+}
+
+.content__scroll {
+  font-family: vars.$fontWork;
+  font-size: vars.$font * 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: vars.$gutter * 8;
+  color: vars.$colorMain;
+}

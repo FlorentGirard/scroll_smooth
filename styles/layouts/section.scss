@@ -1,0 +1,36 @@
+@use '../utils/vars' ;
+
+.section__flex {
+    display: flex;
+    padding: vars.$gutter * 0.8;
+    font-size: vars.$font *1.4;
+    font-family: vars.$fontWork;
+    padding-left: vars.$gutter *4;
+
+    &--step1 {
+        background-color: red;
+    }
+    
+
+    &--step2{
+        background-color: green;
+    }
+
+    &--step3 {
+        background-color: aqua;
+    }
+
+    &--step4 {
+        background-color: bisque;
+    }
+    &--step5{
+        background-color: purple;
+    }
+    &--step6 { 
+        background-color: plum;
+    }
+}
+
+.section__step {
+    padding-right: vars.$gutter;
+}
